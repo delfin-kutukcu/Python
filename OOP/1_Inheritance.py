@@ -113,3 +113,14 @@ print(f'{bird.name} : {bird.make_sound()}')
 print(f'{bird.name} foot number: {bird.foot_num_is()}')
 print(f'{pegasus_animal.name} : {pegasus_animal.make_sound()}')
 print(f'{pegasus_animal.name} foot number: {pegasus_animal.foot_num_is()}')
+
+# 1_inheritance.py outputs:
+
+# Rocky : Woof woof!
+# Rocky foot number: 4
+# Fluffy : Meow meow!
+# Fluffy foot number: 4
+# Blue : Chirp chirp!
+# Blue foot number: 2
+# Pegasus : Animal is making a noise.
+# Pegasus foot number: 4
