@@ -71,9 +71,41 @@ class Cat(Animal):
         :return: Sound of the cat (str)
         """
         return "Meow meow!"
+class MuteAnimal(Animal):
+    """
+    Cat class, inherits from the Animal class.
+    """
+    def __init__(self, name):
+        """
+        Constructor method for the Cat class.
+        
+        :param name: Name of the cat
+        """
+        super().__init__(name, number_of_feet=4)
+    
+    def make_sound(self):
+        pass
+    """ 'pass' is a placeholder statement in Python that does nothing when executed.
+        It is used when a statement is syntactically required but no action is needed.
+        Typically, it is used for defining empty functions, classes, or loops that will be implemented later.
+        # Since `make_sound` is overridden in the Dog class with `pass`, 
+        # it does not return anything, which results in `None` when printed.
+
+    """
+
 
 # Usage
 dog = Dog('Rocky')
 cat = Cat('Fluffy')
+mute_animal = MuteAnimal('Mute')
+pegasus_animal = Animal('Pegasus', 4)
 print(f'{dog.name} : {dog.make_sound()}')
 print(f'{cat.name} : {cat.make_sound()}')
+print(f'{mute_animal.name} : {mute_animal.make_sound()}')
+print(f'{pegasus_animal.name} : {pegasus_animal.make_sound()}')
+
+# Expected Output:
+# Rocky : Woof woof!
+# Fluffy : Meow meow!
+# Mute : None
+# Pegasus : Animal is making a noise.
