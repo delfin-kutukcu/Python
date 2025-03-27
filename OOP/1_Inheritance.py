@@ -1,5 +1,5 @@
 """
-1_inheritance.py
+1_Inheritance.py
 
 This file demonstrates the concept of inheritance in Python.
 It explains multiple inheritance and the built-in `object` class.
